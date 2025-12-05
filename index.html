@@ -853,8 +853,23 @@
 
         .theme-toggle-icon {
             line-height: 1;
+            font-size: 18px;
             color: var(--text-main);
+
+            /* Force system/emoji fonts so the moon & sun look the same
+       locally and on GitHub Pages */
+            font-family:
+                -apple-system,
+                system-ui,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Segoe UI Emoji",
+                "Segoe UI Symbol",
+                "Apple Color Emoji",
+                "Noto Color Emoji",
+                sans-serif;
         }
+
 
         @media (max-width: 900px) {
             body {
